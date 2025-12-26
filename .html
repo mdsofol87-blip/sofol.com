@@ -1,0 +1,167 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click-Through Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f7fb;
+            color: #333;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+
+        .hero-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .hero-text h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 16px 40px;
+            background: #4f46e5;
+            color: #fff;
+            font-size: 18px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .cta-button:hover {
+            background: #4338ca;
+        }
+
+        .hero-image {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .hero-image img {
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        /* BENEFITS SECTION */
+        .benefits {
+            background: #fff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .benefits h2 {
+            margin-bottom: 40px;
+        }
+
+        .benefit-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .benefit {
+            background: #f4f7fb;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        .benefit h3 {
+            margin-bottom: 10px;
+        }
+
+        /* TESTIMONIAL */
+        .testimonial {
+            background: #f4f7fb;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .testimonial p {
+            max-width: 700px;
+            margin: auto;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .testimonial strong {
+            color: #4f46e5;
+        }
+
+        @media (max-width: 768px) {
+            .hero-text h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>Boost Your Productivity Today</h1>
+        <p>Our tool helps you organize tasks, track progress, and manage your team efficiently.  
+        Click below to get started!</p>
+        <a href="https://example.com/next-page" class="cta-button">Get Started Now</a>
+    </div>
+    <div class="hero-image">
+        <img src="https://via.placeholder.com/500x350" alt="Product Screenshot">
+    </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="benefits">
+    <h2>Why You'll Love Our Tool</h2>
+    <div class="benefit-grid">
+        <div class="benefit">
+            <h3>Organize Tasks</h3>
+            <p>Keep all your tasks in one place and never miss a deadline.</p>
+        </div>
+        <div class="benefit">
+            <h3>Track Progress</h3>
+            <p>Visualize team progress and improve efficiency.</p>
+        </div>
+        <div class="benefit">
+            <h3>Collaborate Easily</h3>
+            <p>Work together with your team seamlessly.</p>
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="testimonial">
+    <p>“This tool completely transformed how I manage my team. Productivity has skyrocketed!”</p>
+    <strong>— Jane Doe, Project Manager</strong>
+</section>
+
+</body>
+</html>
